@@ -19,40 +19,125 @@
 
 /* ============= CARDS ============== */
 
-.main__index {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
+.card__box {
+  position: relative;
+  width: 1100px;
+  max-width: 100%;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
+  padding: 30px;
+}
+.card__box .card {
+  position: relative;
+  max-width: 400px;
+  height: 245px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
 }
 
-.main__index .card {
-  width: 330px;
-  height: 460px;
-  border-radius: 9px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px;
+.card__box .card:hover {
+  height: 420px;
+}
+
+.card__box .card .imgCard {
+  position: relative;
+  width: 360px;
+  height: 250px;
+  top: -60px;
+  left: 3px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__box .card .imgCard img {
+  height: 270px;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.card__box .card .content__card {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
   text-align: center;
-  transition: all 0.25s;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
-.main__index .card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+.card__box .card:hover .content__card {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
 }
-.main__index .card img {
-  width: 330px;
-  height: 220px;
+
+/* ============= CONTACTO ============== */
+.contactUs {
+  margin-top: 20px;
+  min-height: 600px;
+  max-width: 500px;
+  height: 80vh;
+  width: 98%;
+  margin: auto;
+  margin-bottom: 40px;
 }
-.main__index .card h4 {
-  font-weight: 600;
-  margin-top: 10px;
+.contact-container {
+  height: 99%;
+  width: 100%;
+  padding: 0.4rem;
+  background: rgba(7, 43, 83, 0.862);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
 }
-.main__index .card p {
-  padding: 0 1rem;
-  font-size: 16px;
-  font-weight: 300;
+.formContact {
+  width: 120%;
+}
+.contact-container form fieldset {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+.legend {
+  font-size: 25px;
+}
+.contact__input {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+}
+.radio {
+  cursor: pointer;
+}
+.select {
+  cursor: pointer;
+}
+.checkbox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+.send-form {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  background: #0a830a;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.send-form:hover {
+  background: rgb(81, 156, 5);
 }

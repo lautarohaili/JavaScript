@@ -13,6 +13,10 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/b6e2e379a5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -149,69 +153,161 @@
 
       <!-- CARDS -->
 
-    <div class="row align-items-center">
-      <div
-        class="col-sm p-3 text-dark text-center"
-        data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom"
-      >
-        <h2>Principales Marcas</h2>
+      <div class="row align-items-center">
+        <div
+          class="col-sm p-3 text-dark text-center"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <h2>Principales Marcas</h2>
+        </div>
       </div>
-    </div>
-
-    <div class="container main__index">
-      <div class="card">
-        <img src="./Imagenes/logo/logoFiat.png" />
-        <h4>FIAT</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Expedita dicta nulla temporibus nesciunt aperiam, quaerat assumenda 
-          totam maxime quisquam. Aliquid pariatur provident vel ut facilis 
-          voluptatum aperiam at nisi. Asperiores?
-        </p>
-      </div>
-      <div class="card">
-        <img src="./Imagenes/logo/logoPeugeot.png" />
-        <h4>PEUGEOT</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Expedita dicta nulla temporibus nesciunt aperiam, quaerat assumenda 
-          totam maxime quisquam. Aliquid pariatur provident vel ut facilis 
-          voluptatum aperiam at nisi. Asperiores?
-        </p>
-      </div>
-      <div class="card">
-        <img src="./Imagenes/logo/logoVw.jpg" />
-        <h4>VOLKSWAGEN</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Expedita dicta nulla temporibus nesciunt aperiam, quaerat assumenda 
-          totam maxime quisquam. Aliquid pariatur provident vel ut facilis 
-          voluptatum aperiam at nisi. Asperiores?
-        </p>
-      </div>
-      <div class="card">
-        <img src="./Imagenes/logo/logoToyota1.jpg" />
-        <h4>TOYOTA</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Expedita dicta nulla temporibus nesciunt aperiam, quaerat assumenda 
-          totam maxime quisquam. Aliquid pariatur provident vel ut facilis 
-          voluptatum aperiam at nisi. Asperiores?
-        </p>
-      </div>
-      <div class="card">
-        <img src="./Imagenes/logo/logoMercedes2.jpg" />
-        <h4>MERCEDES-BENZ</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Expedita dicta nulla temporibus nesciunt aperiam, quaerat assumenda 
-          totam maxime quisquam. Aliquid pariatur provident vel ut facilis 
-          voluptatum aperiam at nisi. Asperiores?
-        </p>
+      <div class="container_fluid card__box">
+        <div class="card">
+          <div class="imgCard">
+            <img src="./Imagenes/logo/logoFiat.png" />
+          </div>
+          <div class="content__card">
+            <h4>FIAT</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Dignissimos libero unde laborum voluptatem veritatis explicabo
+              nobis sed pariatur nisi accusantium error ratione ducimus,
+              provident dolore, repellat minus porro quo iusto!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgCard">
+            <img src="./Imagenes/logo/logoPeugeot.png" />
+          </div>
+          <div class="content__card">
+            <h4>PEUGEOT</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ab
+              quaerat voluptas quod, quidem modi dolor atque totam illum ut eum
+              aut vitae ipsum aspernatur officiis repellat iure doloremque?
+              Magni!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgCard">
+            <img src="./Imagenes/logo/logoVw.jpg" />
+          </div>
+          <div class="content__card">
+            <h4>VOLKSWAGEN</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ad,
+              laudantium tempore cupiditate eos ducimus nulla unde pariatur
+              officiis similique. Illo dicta explicabo maiores, aliquam maxime
+              ipsa vero. Mollitia, provident.
+            </p>
+          </div>
+        </div>
       </div>
       <!-- /CARDS -->
     </main>
+
+    <!-- CONTACTO -->
+
+    <section id="contact" class="contactUs">
+      <div class="contact-container">
+        <form
+          class="formContact"
+          id="contact"
+          method="POST"
+          action="https://formsubmit.co/lautarohaili@gmail.com"
+        >
+          <fieldset>
+            <legend class="legend">Informacion de contacto</legend>
+
+            <label for="nombre">Nombre</label>
+            <input
+              class="contact__input"
+              placeholder="Ingrese su nombre"
+              type="text"
+              id="nombre"
+              name="Nombre"
+              maxlength="20"
+              required
+            />
+            <label for="apellido">Apellido</label>
+            <br />
+            <input
+              class="contact__input"
+              placeholder="Ingrese su apellido"
+              type="text"
+              id="apellido"
+              name="Apellido"
+              maxlength="20"
+              required
+            />
+            <br />
+            <br />
+            <h5>Sexo</h5>
+            <input
+              class="radio"
+              type="radio"
+              value="Masculino"
+              name="Sexo"
+              required
+            />
+            <label for="Masculino">Masculino</label>
+            <br />
+            <input
+              class="radio"
+              type="radio"
+              value="Femenino"
+              name="Sexo"
+              required
+            />
+            <label for="Femenino">Femenino</label>
+            <br />
+            <br />
+            <label for="email">Email</label>
+            <br />
+            <input
+              class="contact__input"
+              type="email"
+              id="email"
+              name="Email"
+              placeholder="nombre@ejemplo.com"
+              maxlength="30"
+              required
+            />
+            <br />
+            <br />
+            <label for="modelo">Elegir Modelo</label>
+            <br />
+            <select class="select" name="Modelos" id="modelo">
+              <option value="Modelos">-- Modelos --</option>
+              <option value="FiatArgo">FIAT - Argo</option>
+              <option value="FiatCronos">FIAT - Cronos</option>
+              <option value="FiatFiorino">FIAT - Fiorino</option>
+              <option value="PeugeotPartnet">PEUGEOT - Partnet</option>
+              <option value="Peugeot208">PEUGEOT - Nuevo 208</option>
+              <option value="Peugeot308">PEUGEOT - 308</option>
+              <option value="VolkswagenPolo">VOLKSWAGEN - Polo</option>
+              <option value="VolkswagenGol">VOLKSWAGEN - Gol</option>
+              <option value="VolkswagenAmarok">VOLKSWAGEN - Amarok</option>
+            </select>
+            <br />
+            <br />
+            <input type="submit" value="Enviar" class="send-form" />
+            <div class="loader-container">
+              <img
+                id="contactLoader"
+                style="display: none"
+                src="/Imagenes/contact.gif"
+                alt="loader"
+              />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- /CONTACTO -->
 
     <script src="/js/main.js"></script>
     <script

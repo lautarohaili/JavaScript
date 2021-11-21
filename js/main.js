@@ -1,5 +1,5 @@
-/* CLASE 5y6 */
-
+import { contactAlert } from "./alerts.js";
+/*
 class Persona {
   constructor(nombre, edad, email) {
     this.nombre = nombre;
@@ -37,7 +37,7 @@ for (let index = 0; index < 5; index++) {
   let entrada = prompt(
     "Buenisimo " +
       name +
-      " ! Por favor seleccione una de las siguientes marcas: \n 1- Fiat \n 2- Peugeot \n 3- Volkswagen" /*\n 4- Toyota \n 5- Mercedes-Benz*/
+      " ! Por favor seleccione una de las siguientes marcas: \n 1- Fiat \n 2- Peugeot \n 3- Volkswagen"
   );
   if (entrada == 1) {
     alert("Perfecta eleccion! has elegido Fiat");
@@ -83,44 +83,33 @@ for (let index = 0; index < 5; index++) {
     } else if (entrada2 == 4) {
       alert("Tendriamos que volver al menu anterior(?");
     }
-  } /* else if (entrada == 4) {
-    alert("Perfecta eleccion! has elegido Toyota");
-    let entrada2 = prompt(
-      "Seleccione uno de los siguientes modelos: \n 1- Cronos \n 2- Argo \n 3- Fiorino \n 4- Toro \n Volver"
-    );
-    if (entrada2 == 1) {
-      alert("Su eleccion es el Fiat Cronos y su valor es de $1.500.000");
-    } else if (entrada2 == 2) {
-      alert("Su eleccion es el Fiat Argo y su valor es de $2.200.000");
-    } else if (entrada2 == 3) {
-      alert("Su eleccion es el Fiat Fiorino y su valor es de $1.800.000");
-    } else if (entrada2 == 4) {
-      alert("Su eleccion es el Fiat Toro y su valor es de $2.700.000");
-    } else if (entrada2 == 5) {
-      alert("Tendriamos que volver al menu anterior(?");
-    }
-  } else if (entrada == 5) {
-    alert("Perfecta eleccion! has elegido Mercedes-Benz");
-    let entrada2 = prompt(
-      "Seleccione uno de los siguientes modelos: \n 1- Cronos \n 2- Argo \n 3- Fiorino \n 4- Toro \n Volver"
-    );
-    if (entrada2 == 1) {
-      alert("Su eleccion es el Fiat Cronos y su valor es de $1.500.000");
-    } else if (entrada2 == 2) {
-      alert("Su eleccion es el Fiat Argo y su valor es de $2.200.000");
-    } else if (entrada2 == 3) {
-      alert("Su eleccion es el Fiat Fiorino y su valor es de $1.800.000");
-    } else if (entrada2 == 4) {
-      alert("Su eleccion es el Fiat Toro y su valor es de $2.700.000");
-    } else if (entrada2 == 5) {
-      alert("Tendriamos que volver al menu anterior(?");
-    }
-  } */
-
+  }
   let cuotas = parseFloat(
     prompt("¿ En cuantas cuotas desea realizar la compra del vehiculo ?")
   );
 
   alert("El valor de las cuotas es de " + resultado);
   console.log("El valor de las cuotas es de " + resultado);
-}
+} */
+
+const contactSend = () => {
+  document.querySelector("#contact").addEventListener("submit", (e) => {
+    e.preventDefault();
+    document.querySelector(".send-form").style.display = "none";
+    document.querySelector("#contactLoader").style.display = "block";
+
+    //Hacemos POST en la api de formulario
+    fetch(`https://formsubmit.co/ajax/7e77fc1b7e4412f9635f9c5bdd658a0a`, {
+      method: "POST",
+      body: new FormData(e.target),
+    })
+      .then((res) => (res.ok ? res.json : Promise.reject(res)))
+      .then((json) => {
+        contactAlert();
+        // setTimeout(() => { location.reload() }, 2000);
+      })
+      .catch(console.warn);
+  });
+};
+
+contactSend();
