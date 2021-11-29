@@ -1,4 +1,3 @@
-import { contactAlert } from "./alerts.js";
 /*
 class Persona {
   constructor(nombre, edad, email) {
@@ -91,6 +90,7 @@ for (let index = 0; index < 5; index++) {
   alert("El valor de las cuotas es de " + resultado);
   console.log("El valor de las cuotas es de " + resultado);
 } */
+import { contactAlert } from "./alerts.js";
 
 const contactSend = () => {
   document.querySelector("#contact").addEventListener("submit", (e) => {
@@ -99,7 +99,7 @@ const contactSend = () => {
     document.querySelector("#contactLoader").style.display = "block";
 
     //Hacemos POST en la api de formulario
-    fetch(`https://formsubmit.co/ajax/7e77fc1b7e4412f9635f9c5bdd658a0a`, {
+    fetch(`https://formsubmit.co/ajax/lautarohaili@gmail.com`, {
       method: "POST",
       body: new FormData(e.target),
     })
