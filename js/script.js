@@ -9,7 +9,6 @@ $(document).ready(function () {
     } else {
       $("#names").css("border-bottom-color", "#d1d1d1");
     }
-
     // Validado Correo ==============================
     if ($("#email").val() == "") {
       errores += "<p>Ingrese un correo</p>";
@@ -17,7 +16,6 @@ $(document).ready(function () {
     } else {
       $("#email").css("border-bottom-color", "#d1d1d1");
     }
-
     // Validado Mensaje ==============================
     if ($("#mensaje").val() == "") {
       errores += "<p>Escriba un mensaje</p>";
@@ -25,7 +23,6 @@ $(document).ready(function () {
     } else {
       $("#mensaje").css("border-bottom-color", "#d1d1d1");
     }
-
     // ENVIANDO MENSAJE ============================
     if ((errores == "") == false) {
       var mensajeModal =
@@ -38,8 +35,20 @@ $(document).ready(function () {
         "</div>";
 
       $("body").append(mensajeModal);
+    } else {
+      var mensajeEnviado =
+        '<div class="modal_wrap">' +
+        '<div class="mensaje_modal">' +
+        "<h3>MENSAJE ENVIADO !</h3>" +
+        "<p>Gracias por su consulta, en el plazo maximo de 48hs nos estaremos contactando.</p>" +
+        '<span id="btnClose">Cerrar</span>' +
+        "</div>" +
+        "</div>";
+      $("body").append(mensajeEnviado);
+      setTimeout(function () {
+        location.href = "contacto.html";
+      }, 1000 * 5);
     }
-
     // CERRANDO MODAL ==============================
     $("#btnClose").click(function () {
       $(".modal_wrap").remove();
