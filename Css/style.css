@@ -83,78 +83,65 @@ header {
   text-align: center;
 }
 
-/* =================== MAIN ==================== */
+/* ============= GALLERY ============== */
 
-/* ============= CARDS ============== */
-
-.card__box {
-  position: relative;
-  width: 1100px;
-  max-width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-left: 110px;
-  padding-top: 60px;
-}
-.card__box .card {
-  position: relative;
-  max-width: 400px;
-  height: 245px;
-  background-color: #fff;
-  margin: 30px 10px;
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
-}
-
-.card__box .card:hover {
-  height: 460px;
-}
-
-.card__box .card .imgCard {
-  position: relative;
-  width: 360px;
-  height: 250px;
-  top: -60px;
-  left: 3px;
-  z-index: 1;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card__box .card .imgCard img {
-  height: 270px;
-  max-width: 100%;
-  border-radius: 4px;
-}
-
-.logoFiat {
-  padding-left: 45px;
-}
-
-.logoVw {
-  padding-left: 90px;
-}
-
-.card__box .card .content__card {
-  position: relative;
-  margin-top: -140px;
-  padding: 10px 15px;
+.subtitulo {
   text-align: center;
-  color: #111;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
+  font-weight: 350;
+  color: #9f8ad0;
+  margin-bottom: 40px;
+}
+.gallery {
+  background: #f2f2f2;
+}
+.contenedor-galeria {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.img-galeria {
+  width: 30%;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
-.card__box .card:hover .content__card {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -40px;
-  transition-delay: 0.3s;
+.imagen-light {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.show {
+  transform: translate(0);
+}
+
+.agregar-imagen {
+  width: 60%;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: transform 0.3s 0.2s;
+}
+
+.showImage {
+  transform: scale(1);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  cursor: pointer;
 }
 
 /* ============= CONTACTO ============== */

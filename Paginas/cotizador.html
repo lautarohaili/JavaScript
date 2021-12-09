@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulario de contacto</title>
+
+    <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="/Css/cotizador.css" />
+    <link rel="stylesheet" href="/Css/font-awesome.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b6e2e379a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <header class="header" id="inicio">
+      <img
+        src="../Imagenes/iconos/bx-menu-alt-right.svg"
+        alt=""
+        class="hamburguer"
+      />
+      <nav class="menu-navegacion">
+        <a href="../index.html">Inicio</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#portafolio">Galeria</a>
+        <a href="#">Quienes Somos?</a>
+        <a href="./cotizador.html">Cotizador</a>
+        <a href="./contacto.html">Contacto</a>
+      </nav>
+      <div class="contenedor head">
+        <h1 class="titulo">
+          Somos los indicados para que encuentres el auto que siempre soñastes
+        </h1>
+      </div>
+    </header>
+    <!-- /NavBar -->
+
+    <!-- CARDS -->
+    <div class="row align-items-center" id="marcas">
+      <div
+        class="col-sm p-3 text-dark text-center"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+      >
+        <h2>Principales Marcas</h2>
+      </div>
+    </div>
+    <div class="container_fluid card__box">
+      <div class="card">
+        <div class="imgCard">
+          <img class="logoFiat" src="./Imagenes/logo/logoFiat2.png" />
+        </div>
+        <div class="content__card">
+          <h4>FIAT</h4>
+          <p>
+            Fiat Automobiles -siglas de Fabbrica Italiana Automobili Torino (en
+            español: Fábrica Italiana de Automóviles de Turín) es una histórica
+            marca italiana de automóviles, bajo la que se comercializan
+            vehículos desde 1899, origen del mayor grupo industrial italiano,
+            Fiat S.p.A., propiedad de Stellantis.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgCard">
+          <img class="logoPeugeot" src="./Imagenes/logo/logoPeugeot.png" />
+        </div>
+        <div class="content__card">
+          <h4>PEUGEOT</h4>
+          <p>
+            Peugeot es una marca de automóviles francesa con más de 200 años de
+            historia. Los molinillos fueron su primer producto y más tarde se
+            dedicaría a la fabricación de automóviles con el nombre «Les fils de
+            Peugeot frères» (Hijos de los hermanos Peugeot).
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgCard">
+          <img class="logoVw" src="./Imagenes/logo/logoVw.png" />
+        </div>
+        <div class="content__card">
+          <h4>VOLKSWAGEN</h4>
+          <p>
+            El Grupo Volkswagen, con sede en Wolfsburg, Alemania, fundado en
+            1937, es uno de los principales fabricantes mundiales de automóviles
+            y vehículos comerciales y el mayor fabricante de automóviles de
+            Europa.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /CARDS -->
+
+    <!-- Cotizador -->
+
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-6">
+          <h2>Bienvenido a nuestro cotizador</h2>
+          <div class="form-group">
+            <label for="monto">Monto solicitado</label>
+            <input
+              type="text"
+              class="form-control"
+              id="monto"
+              placeholder="Ingresar monto"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tiempo">Cuotas (Cantidad de meses)</label>
+            <input
+              type="text"
+              class="form-control"
+              id="tiempo"
+              placeholder="Ingresar cantidad de meses"
+            />
+          </div>
+          <div class="form-group">
+            <label for="interes">Interés Mensual</label>
+            <input
+              type="text"
+              class="form-control"
+              id="interes"
+              placeholder="Ingresar tasa de interés mensual"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" id="btnCalcular">
+            Calcular
+          </button>
+        </div>
+        <div class="col-6">
+          <table id="lista-tabla" class="table">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Cuota</th>
+                <th>Capital</th>
+                <th>Interés</th>
+                <th>Saldo</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- /Cotizador -->
+
+    <!-- Footer -->
+
+    <footer id="contacto">
+      <div class="contenedor footer-content">
+        <div class="contact-us">
+          <h2 class="brand">Haili Consecionaria</h2>
+          <p>Somos los indicados para que encuentres el auto de tus suenos</p>
+        </div>
+        <div class="social-media">
+          <a href="./" class="social-media-icon">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="./" class="social-media-icon">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="./" class="social-media-icon">
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="line"></div>
+    </footer>
+
+    <!-- /Footer -->
+
+    <!-- llamada a bootstrap -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/amortizacion.js"></script>
+    <script src="/js/moment.js"></script>
+  </body>
+</html>
