@@ -12,16 +12,21 @@
 /* ============= CARDS ============== */
 
 .card__box {
+  display: flex;
   position: relative;
   width: 1100px;
   max-width: 100%;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   padding-left: 110px;
   padding-top: 60px;
 }
+
+.content__card {
+  text-align: left;
+}
+
 .card__box .card {
   position: relative;
   max-width: 400px;
@@ -55,20 +60,12 @@
   border-radius: 4px;
 }
 
-.logoFiat {
-  padding-left: 45px;
-}
-
-.logoVw {
-  padding-left: 90px;
-}
-
 .card__box .card .content__card {
   position: relative;
   margin-top: -140px;
-  padding: 10px 15px;
-  text-align: center;
+  padding: 10px 5px;
   color: #111;
+  text-align: center;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
