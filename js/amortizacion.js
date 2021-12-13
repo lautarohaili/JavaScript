@@ -4,6 +4,12 @@ const interes = document.getElementById("interes");
 const btnCalcular = document.getElementById("btnCalcular");
 const llenarTabla = document.querySelector("#lista-tabla tbody");
 
+$(document).ready(function () {
+  $("#btnCalcular").click(function () {
+    $("#tablaResultado").slideDown();
+  });
+});
+
 btnCalcular.addEventListener("click", () => {
   calcularCuota(monto.value, interes.value, tiempo.value);
 });

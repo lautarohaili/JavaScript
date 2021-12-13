@@ -86,3 +86,6 @@
 .btn {
   margin: 10px;
 }
+#tablaResultado {
+  display: none;
+}
