@@ -22,7 +22,7 @@ header {
       rgba(161, 196, 253, 0.404) 0%,
       rgba(194, 233, 251, 0.404) 100%
     ),
-    url(../Imagenes/autoFondo.jpg);
+    url(https://images.unsplash.com/photo-1603820894472-cffc9c263643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

@@ -45,6 +45,7 @@ $(document).ready(function () {
         "</div>" +
         "</div>";
       $("body").append(mensajeEnviado);
+
       setTimeout(function () {
         location.href = "contacto.html";
       }, 1000 * 5);
