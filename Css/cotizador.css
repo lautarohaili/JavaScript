@@ -7,6 +7,8 @@
   scroll-behavior: smooth;
 }
 
+/* =================== HEADER ==================== */
+
 .contenedor {
   width: 90%;
   max-width: 1200px;
@@ -22,7 +24,7 @@ header {
       rgba(161, 196, 253, 0.404) 0%,
       rgba(194, 233, 251, 0.404) 100%
     ),
-    url(https://images.unsplash.com/photo-1603820894472-cffc9c263643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80);
+    url(https://images.unsplash.com/photo-1557215121-f6da31003be7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -86,165 +88,94 @@ header {
 
 /* ============= CARDS ============== */
 
-.main__index {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-}
-
-.main__index .card {
-  width: 330px;
-  height: 460px;
-  border-radius: 9px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px;
+.contenedor .subtitulo {
   text-align: center;
-  transition: all 0.25s;
-}
-.main__index .card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-.main__index .card img {
-  width: 330px;
-  height: 220px;
-}
-.main__index .card h4 {
-  font-weight: 600;
-  margin-top: 10px;
-}
-.main__index .card p {
-  padding: 0 1rem;
-  font-size: 16px;
-  font-weight: 300;
 }
 
-/* ============= GALLERY ============== */
-
-.subtitulo {
-  text-align: center;
-  font-weight: 350;
-  color: #9f8ad0;
-  margin-bottom: 40px;
-}
-.gallery {
-  background: #f2f2f2;
-}
-.contenedor-galeria {
+.card__box {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.img-galeria {
-  width: 30%;
-  display: block;
-  margin-bottom: 15px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-}
-
-.imagen-light {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(100%);
-  transition: transform 0.2s ease-in-out;
-}
-
-.show {
-  transform: translate(0);
-}
-
-.agregar-imagen {
-  width: 60%;
-  border-radius: 10px;
-  transform: scale(0);
-  transition: transform 0.3s 0.2s;
-}
-
-.showImage {
-  transform: scale(1);
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 40px;
-  cursor: pointer;
-}
-
-/* ============= CONTACTO ============== */
-.contactUs {
-  margin-top: 20px;
-  min-height: 600px;
-  max-width: 500px;
-  height: 80vh;
-  width: 98%;
-  margin: auto;
-  margin-bottom: 40px;
-}
-.contact-container {
-  height: 99%;
-  width: 100%;
-  padding: 0.4rem;
-  background: rgba(7, 43, 83, 0.862);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
   position: relative;
+  width: 90%;
+  max-width: 1100px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.formContact {
-  width: 120%;
+
+.card__box .card {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  height: 245px;
+  max-height: auto;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
 }
-.contact-container form fieldset {
-  font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
+
+.card__box .card:hover {
+  height: 480px;
 }
-.legend {
-  font-size: 25px;
+
+.card__box .card .imgCard {
+  position: relative;
+  width: 360px;
+  height: 250px;
+  top: -60px;
+  left: 3px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
-.contact__input {
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  height: 40px;
+
+.card__box .card .imgCard img {
+  height: 270px;
+  max-width: 100%;
+  border-radius: 4px;
 }
-.radio {
-  cursor: pointer;
+
+.card__box .card .content__card {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 5px;
+  color: #111;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
-.select {
-  cursor: pointer;
+
+.card__box .card:hover .content__card {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
 }
-.checkbox {
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
+
+.line__cards {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 2px;
+
+  background: rgba(202, 207, 210, 0.507);
+  margin-bottom: 60px;
 }
-.send-form {
-  cursor: pointer;
-  width: 100%;
-  height: 40px;
-  background: #0a830a;
-  border: none;
-  border-radius: 5px;
-  transition: 0.3s;
+
+/* ============= COTIZADOR ============== */
+
+.form-group {
+  margin: 15px;
 }
-.send-form:hover {
-  background: rgb(81, 156, 5);
+.btn {
+  margin: 10px;
+}
+#tablaResultado {
+  display: none;
+  width: 50%;
 }
 
 /* ---------------- FOOTER ---------------- */
@@ -315,6 +246,8 @@ footer {
   margin-bottom: 60px;
 }
 
+/* -------------------  -------------------- */
+
 @media screen and (max-width: 800px) {
   .menu-navegacion {
     width: 50vw;
@@ -340,9 +273,20 @@ footer {
     width: 80%;
     margin-bottom: 40%;
   }
+  .card__box {
+    width: 80%;
+  }
+
+  .table {
+    width: 80%;
+  }
+
+  #tablaResultado {
+    font-size: 16px;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .menu-navegacion {
     width: 65vw;
   }
@@ -360,5 +304,54 @@ footer {
   }
   .contacts-us {
     width: 90%;
+  }
+
+  .contenedor .subtitulo {
+    text-align: center;
+  }
+
+  .card__box {
+    align-items: center;
+    width: 90%;
+    padding-left: 5px;
+  }
+
+  .card__box .card {
+    width: 90%;
+    max-width: 350px;
+    height: 145px;
+    align-items: center;
+  }
+
+  .card__box .card:hover {
+    height: 370px;
+  }
+
+  .card__box .card .content__card {
+    margin: 0px;
+    text-align: start;
+  }
+
+  .card__box .card .imgCard {
+    width: 260px;
+    height: 150px;
+  }
+  .card__box .card .imgCard img {
+    position: center;
+    width: 260px;
+    height: 150px;
+  }
+  .main__index .card h4 {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .card__box .card .content__card p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  #tablaResultado {
+    font-size: 12px;
   }
 }

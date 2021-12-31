@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="../Css/cotizador.css" />
+    <link rel="stylesheet" href="../Css/font-awesome.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b6e2e379a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <header class="header" id="inicio">
+      <img
+        src="../Imagenes/iconos/bx-menu-alt-right.svg"
+        alt=""
+        class="hamburguer"
+      />
+      <nav class="menu-navegacion">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html">Marcas</a>
+        <a href="../index.html">Galeria</a>
+        <a href="./cotizador.html">Cotizador</a>
+        <a href="./contacts.html">Contacto</a>
+      </nav>
+      <div class="contenedor head">
+        <h1 class="titulo">
+          Somos los indicados para que encuentres el auto que siempre soñaste
+        </h1>
+      </div>
+    </header>
+    <!-- /NavBar -->
+
+    <!-- CARDS -->
+    <div class="contenedor">
+      <h2 class="subtitulo">MODELOS DISPONIBLES</h2>
+    </div>
+    <div class="card__box">
+      <div class="card">
+        <div class="imgCard">
+          <img class="logoFiat" src="../Imagenes/galeria/nuevo208-1.jpg" />
+        </div>
+        <div class="content__card">
+          <h4>PEUGEOT-NUEVO 208</h4>
+          <p>
+            <b>Modelo: 208 LIKE 1.6</b> <br />
+            CARACTERISTICAS Y EQUIPAMIENTO: <br />
+            -Llantas de 15” de acero c/embellecedores <br />
+            -Pantalla con comandos 5” <br />
+            -Faros delanteros con DRL incluidos <br />
+            -Retrovisores eléctricos <br />
+            <b>PRECIO CONTADO $2.712.600</b>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgCard">
+          <img class="logoPeugeot" src="../Imagenes/galeria/308-1.jpg" />
+        </div>
+        <div class="content__card">
+          <h4>PEUGEOT-308</h4>
+          <p>
+            <b>Modelo: 308 ALLURE 1.6</b> <br />
+            CARACTERISTICAS Y EQUIPAMIENTO: <br />
+            -Llantas de aleación ligera <br />
+            -Faros antiniebla delanteros <br />
+            -Techo cielo vidriado <br />
+            -Computadora multifunción <br />
+            <b>PRECIO CONTADO $ 2.812.900</b>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgCard">
+          <img class="logoVw" src="../Imagenes/galeria/argo2.jpg" />
+        </div>
+        <div class="content__card">
+          <h4>FIAT-ARGO</h4>
+          <p>
+            <b>Modelo: Argo Drive 1.3</b> <br />
+            CARACTERISTICAS Y EQUIPAMIENTO: <br />
+            -Central multimedia de 7" <br />
+            -Sensores de estacionamiento traseros <br />
+            -Espejos eléctricos <br />
+            -Volante Multifuncional <br />
+            <b>PRECIO CONTADO $2.249.900</b>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgCard">
+          <img class="logoVw" src="../Imagenes/galeria/cronos1.jpg" />
+        </div>
+        <div class="content__card">
+          <h4>FIAT-CRONOS</h4>
+          <p>
+            <b>Modelo: 1.3L Attractive</b> <br />
+            CARACTERISTICAS Y EQUIPAMIENTO: <br />
+            -Transmisión manual 5 velocidades <br />
+            -Pantalla táctil de 7" color <br />
+            -Sensores de estacionamiento traseros <br />
+            -Cierre de puertas, centralizado con comando a distancia <br />
+            <b>PRECIO CONTADO $1.979.400</b>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgCard">
+          <img class="logoVw" src="../Imagenes/galeria/polo1.jpg" />
+        </div>
+        <div class="content__card">
+          <h4>VOLKSWAGEN-POLO</h4>
+          <p>
+            <b>Modelo: Polo MSI </b> <br />
+            CARACTERISTICAS Y EQUIPAMIENTO: <br />
+            -Alzacristales eléctricos delanteros y traseros <br />
+            -Llantas de aleación de 15" <br />
+            -Sistema Multimedia "Composition Touch" 6,5” <br />
+            -Volante multifunción <br />
+            <b>PRECIO CONTADO $3.168.100</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /CARDS -->
+    <div class="line__cards"></div>
+
+    <!-- Cotizador -->
+
+    <div class="container-fluid">
+      <div class="row mt-3">
+        <div class="col-md-12 table">
+          <h2>Bienvenido a nuestro cotizador</h2>
+          <div class="form-group">
+            <label for="monto">Monto solicitado</label>
+            <input
+              type="text"
+              class="form-control"
+              id="monto"
+              placeholder="Ingresar monto"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tiempo">Cuotas (Cantidad de meses)</label>
+            <input
+              type="text"
+              class="form-control"
+              id="tiempo"
+              placeholder="Ingresar cantidad de meses"
+            />
+          </div>
+          <div class="form-group">
+            <label for="interes">Interés Mensual</label>
+            <input
+              type="text"
+              class="form-control"
+              id="interes"
+              placeholder="Ingresar tasa de interés mensual"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" id="btnCalcular">
+            Calcular
+          </button>
+        </div>
+        <div class="col-md-12" id="tablaResultado">
+          <table id="lista-tabla" class="table">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Cuota</th>
+                <th>Capital</th>
+                <th>Interés</th>
+                <th>Saldo</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- /Cotizador -->
+
+    <!-- Footer -->
+
+    <footer id="contacto">
+      <div class="contenedor footer-content">
+        <div class="contact-us">
+          <h2 class="brand">Haili Consecionario</h2>
+          <p>¡Siente la sensación de un coche nuevo!</p>
+        </div>
+        <div class="social-media">
+          <a href="#" class="social-media-icon">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="#" class="social-media-icon">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="#" class="social-media-icon">
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="line"></div>
+    </footer>
+
+    <!-- /Footer -->
+
+    <script src="../js/moment.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/amortizacion.js"></script>
+    <!-- llamada a bootstrap -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

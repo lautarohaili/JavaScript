@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/styleContacto.css" />
+    <link rel="stylesheet" href="../Css/font-awesome.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b6e2e379a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <header class="header" id="inicio">
+      <img
+        src="../Imagenes/iconos/bx-menu-alt-right.svg"
+        alt=""
+        class="hamburguer"
+      />
+      <nav class="menu-navegacion">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html">Marcas</a>
+        <a href="../index.html">Galeria</a>
+        <a href="./cotizador.html">Cotizador</a>
+        <a href="./contacto.html">Contacto</a>
+      </nav>
+      <div class="contenedor head">
+        <h1 class="titulo">
+          Somos los indicados para que encuentres el auto que siempre soñaste
+        </h1>
+      </div>
+    </header>
+    <!-- /NavBar -->
+
+    <!-- FORMULARIO -->
+    <section class="form_wrap">
+      <section class="contact_info">
+        <section class="info_title">
+          <span class="fa fa-user-circle"></span>
+          <h2>INFORMACION<br />DE CONTACTO</h2>
+        </section>
+        <section class="info_items">
+          <p><span class="fa fa-envelope"></span> haili.lautaro@gmail.com</p>
+          <p><span class="fa fa-mobile"></span> 11-2233445566</p>
+        </section>
+      </section>
+    <form class="form_contact">
+      <h2 class="form_contact-tittle">Contactenos</h2>
+      <div class="user_info">
+        <label for="names">Nombre Completo *</label>
+        <input type="text" name="name" placeholder="Escriba su nombre"
+      title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+
+        <label for="phone">Telefono / Celular</label>
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Ingrese un numero de telefono"
+        />
+
+        <label for="email">Correo electronico *</label>
+        <input type="email" name="email" placeholder="Escriba su email" title="Email incorrecto"
+      pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+
+        <textarea
+          name="comments"
+          cols="50"
+          rows="5"
+          placeholder="Escriba su mensaje"
+          title="Tu comentario no debe exceder los 255 caracteres"
+          data-pattern="^.{1,255}$"
+          required
+        ></textarea>
+        <br />
+        <input type="submit" value="Enviar" class="botton" />
+        <div class="contact-form-loader none">
+          <img src="../Imagenes/Iphone-spinner-2.gif" alt="Cargando" />
+        </div>
+        <div class="contact-form-response none">
+          <p>Los datos han sido enviados</p>
+        </div>
+      </div>
+    </form>
+<!-- /FORMULARIO --> 
+
+    <script src="../js/moment.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/contacto.js"></script>
+    <script src="../js/menu.js"></script>
+
+    <!-- llamada a bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
