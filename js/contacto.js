@@ -51,7 +51,7 @@ function contactForm() {
         console.log(json);
         $loader.classList.add("none");
         $response.classList.remove("none");
-        $response.innerHTML = `<p>El mensaje se envio con exito! En breve nos estaremos contactando.</p>`;
+        $response.innerHTML = `<p class="msj">El mensaje se envio con exito! En breve nos estaremos contactando.</p>`;
         $form.reset();
       })
       /* .catch((err) => {

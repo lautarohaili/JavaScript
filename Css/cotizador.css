@@ -54,6 +54,7 @@ header {
 }
 .menu-navegacion {
   position: fixed;
+  z-index: 9999;
   font-size: 25px;
   top: 0;
   right: 0;
@@ -99,14 +100,14 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding-left: 110px;
-  padding-top: 60px;
 }
 
 .card__box .card {
   position: relative;
+  width: 90%;
   max-width: 400px;
   height: 245px;
+  max-height: auto;
   background-color: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
@@ -174,6 +175,7 @@ header {
 }
 #tablaResultado {
   display: none;
+  width: 50%;
 }
 
 /* ---------------- FOOTER ---------------- */
@@ -244,6 +246,8 @@ footer {
   margin-bottom: 60px;
 }
 
+/* -------------------  -------------------- */
+
 @media screen and (max-width: 800px) {
   .menu-navegacion {
     width: 50vw;
@@ -270,11 +274,19 @@ footer {
     margin-bottom: 40%;
   }
   .card__box {
-    align-items: center;
+    width: 80%;
+  }
+
+  .table {
+    width: 80%;
+  }
+
+  #tablaResultado {
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .menu-navegacion {
     width: 65vw;
   }
@@ -300,14 +312,15 @@ footer {
 
   .card__box {
     align-items: center;
-    width: 500px;
-    padding-left: 30px;
+    width: 90%;
+    padding-left: 5px;
   }
 
   .card__box .card {
-    width: 65%;
+    width: 90%;
     max-width: 350px;
     height: 145px;
+    align-items: center;
   }
 
   .card__box .card:hover {
@@ -336,5 +349,9 @@ footer {
   .card__box .card .content__card p {
     font-size: 14px;
     margin-top: 15px;
+  }
+
+  #tablaResultado {
+    font-size: 12px;
   }
 }

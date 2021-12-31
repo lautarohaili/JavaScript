@@ -52,6 +52,7 @@ header {
 }
 .menu-navegacion {
   position: fixed;
+  z-index: 9999;
   font-size: 25px;
   top: 0;
   right: 0;

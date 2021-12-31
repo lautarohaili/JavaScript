@@ -43,11 +43,11 @@ function calcularCuota(monto, interes, tiempo) {
 
     const row = document.createElement("tr");
     row.innerHTML = `
-            <td>${fechas[i]}</td>
-            <td>${cuota.toFixed(2)}</td>
-            <td>${pagoCapital.toFixed(2)}</td>
-            <td>${pagoInteres.toFixed(2)}</td>
-            <td>${monto.toFixed(2)}</td>
+            <td class="tabla">${fechas[i]}</td>
+            <td class="tabla">${cuota.toFixed(2)}</td>
+            <td class="tabla">${pagoCapital.toFixed(2)}</td>
+            <td class="tabla">${pagoInteres.toFixed(2)}</td>
+            <td class="tabla">${monto.toFixed(2)}</td>
         `;
     llenarTabla.appendChild(row);
   }
